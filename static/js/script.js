@@ -1,4 +1,4 @@
-function countdown () {
+function countdown() {
   var lastExam = new Date(2015, 11, 11,  14, 0); // 2:00 PM, 11 Nov 2015
   var now = Date.now();
 
@@ -18,12 +18,12 @@ function countdown () {
   var ss = Math.floor(msec / 1000);
   msec -= ss * 1000;
 
-  document.getElementById("days").innerHTML = dd + "<span>days</span>";
-  document.getElementById("time").innerHTML = hh + "<span>hrs</span> " + mm + "<span>mins</span> " + ss + "<span>secs</span>";
+  document.getElementById('days').innerHTML = dd + '<span>days</span>';
+  document.getElementById('time').innerHTML = hh + '<span>hrs</span> ' + mm + '<span>mins</span> ' + ss + '<span>secs</span>';
 }
 
-var timer = setInterval(function () {
+var timer = setInterval(function() {
   countdown();
-},1000);
+}, 1000);
 
 countdown();
